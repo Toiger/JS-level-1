@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+ 
+ 
+ <!-- Задание 1 -->
+	<script>
+		var a = 1, b = 1, c, d;
+		c = ++a; alert(c); // 2 /* ++a означает что мы к переменной а прибавляем единицу */
+		d = b++; alert(d); // 1 /* ++ после переменной означает, что мы прибавляем единицу, но выводим предыдущее значение переменной */
+		c = (2+ ++a); alert(c); // 5 /* т.к. в первом примере мы прибавили единицу в переменную а ее значение стало равно 2. В данном примере прибавляем еще единицу и а становится равно 3, отсюда ответ 5 */
+		d = (2+ b++); alert(d); // 4 /* т.к. во втором примере мы прибавили единицу в переменную b ее значение стало равно 2. В данном примере прибавляем еще единицу и а становится равно 3, но выводим предыдущее значение т.е. 2, отсюда получаем 4 */
+		alert(a); // 3	/* прибавили единицу в примере 1 и примере 3 */
+		alert(b); // 3	/* прибавили единицу в примере 2 и примере 4 */
+	</script>
+  
+   <! --Задание 2-->
+           
+       /* x=5 т.к. *= это возвдение числа в заданную степень*/
+       
+       <! --Задание 3-->
+       
+        <script>
+            
+        let a = Number(prompt("Введите первое число"));
+        let b = Number(prompt("Введите второе число"));
+        if(a>=0 && b>=0){
+            alert(a-b)
+        } 
+            else if(a<0 && b<0){
+                alert(a*b)
+            } 
+                  else {
+                    alert(a+b)
+                  }
+            
+         </script>
+                    
+             <!--Задание 4-->     
+               
+        <script> 
+                
+        let a = 11;
+        switch(a){
+            case 11:alert(a++);
+            case 12:alert(a++);
+            case 13:alert(a++);
+            case 14:alert(a++);
+            case 15:alert(a++);
+           }
+            
+            
+        </script> 
+          
+           <!--Задание 5-->  
+          
+       <script>
+            function summ (a,b){
+          return a+b;
+        }
+            let b = summ(3,5);
+            alert(b);
+        
+        function min (a,b){
+            return a-b;
+        }
+        
+        function square (a,b){
+            return a*b;
+        }
+        
+        function del (a, b){
+            return a/b;
+        }
+        </script>
+        
+          <!--Задание 6-->  
+        
+        <script>
+             function mathOperation(a, b, operation){    
+       switch(operation){
+           case "Вычитание":return a-b;
+                break;
+           case "Сложение":return a+b;
+                break;
+           case "Умножение":return a*b;
+                break;
+           case "Деление":return a/b;
+                break;
+       } 
+             }
+            
+       </script>
+       
+          <!--Задание 7-->
+          
+          <script>
+          alert( null > 0 );  //  false
+          alert( null == 0 ); //  false
+          alert( null >= 0 ); // true
+              /* Сравнения преобразуют null в 0, а при равенстве ни к чему не приводится.*/
+         </script>
+         
+         <!--Задание 8-->
+         
+         <script>
+             function power (val, pow){
+                 if(val==pow) {
+                     return val;}
+                 else {
+                     return val * power(val, pow - 1);
+                 }
+                 }
+         </script>
+</body>
+</html>

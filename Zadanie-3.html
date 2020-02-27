@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <!-- Задание-1-->
+   
+    <script>
+    function primeNum(num){
+         if (num <= 1) {
+        return false;    
+    }
+        let i=2;
+        
+        while(i<num){
+            if(num % i ==0){
+                return false;
+            }
+            i++;
+        }
+        return true;
+    }
+
+        let num=0;
+        while(num<=100){
+            if(primeNum(num)){
+                console.log(num);
+            }
+            num++
+        }
+        </script>
+        
+        <!-- Задание-2,3-->
+        
+        <script>
+        function countBasketPrice(basket){
+   let sum = 0;
+
+    for(let i = 0; i < basket.length; i++){
+        sum = sum + basket[i][1];
+    }
+    return sum;
+            
+            let basket = [["Пальто" , 5000], ["Брюки", 3000], ["Рубашка", 1000]];  
+            p = countBasketPrice(basket);
+            console.log("сумма корзины: " + p);
+       </script>
+       
+        <!-- Задание-4-->
+        
+        <script>
+            
+        for (let i = 0; i <= 9; console.log(i++))
+            
+             </script>
+             
+             <!-- Задание-5-->
+             
+             <script>
+    
+              let x = "";
+              for(let i = 0; i < 20 ; i++){
+               x = x + "x";
+               console.log(x);
+               
+              </script>
+</body>
+</html>
